@@ -31,7 +31,7 @@ public class VB_Homework_4 {
         System.out.println("Ваша матрица - " + Arrays.deepToString(array));
     }
 
-    public static int[][] changeDiagonals(int[][] array) {
+    public static void changeDiagonals(int[][] array) {
         for (int i = 0; i < array.length / 2; i++) {
             int temp = array[i][i];
             if (i == 0) {
@@ -51,7 +51,6 @@ public class VB_Homework_4 {
                 array[array.length - i - 1][array.length - i -1] = temp1;
             }
         }
-        return array;
     }
 
 }
