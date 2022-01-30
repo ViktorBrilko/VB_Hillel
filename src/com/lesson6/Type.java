@@ -1,4 +1,4 @@
-package com.company;
+package com.lesson6;
 
 public enum Type {
     ADMIN (0),
