@@ -11,6 +11,11 @@ public class User {
         this.type = type;
     }
 
+
+    public Type getType() {
+        return type;
+    }
+
     @Override
     public String toString() {
         return login + " " + password + " " + type;
@@ -24,9 +29,6 @@ public class User {
         if (!(o instanceof User)) return false;
         User that = (User) o;
         return this.login.equals(that.login) && this.password.equals(that.password) && this.type.equals(that.type);
-
-//      return this.hashCode() == o.hashCode();
-
     }
 
     @Override
